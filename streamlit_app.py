@@ -14,7 +14,7 @@ search_query = st.text_input("Search Query")
 if st.button("Search"):
     # Validate inputs
     if not openai_api_key.strip() or not serpapi_api_key.strip() or not search_query.strip():
-        st.write(f"Please provide the missing fields.")
+        st.error(f"Please provide the missing fields.")
     else:
         try:
             # Initialize the OpenAI module, load the SerpApi tool, and run the search query using an agent
@@ -24,6 +24,6 @@ if st.button("Search"):
 
             result = agent.run(search_query)
             
-            st.write(result)
+            st.success(result)
         except Exception as e:
-            st.write(f"An error occurred: {e}")
+            st.error(f"An error occurred: {e}")
