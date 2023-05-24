@@ -1,4 +1,6 @@
 # langchain-search
+*Note: This repo has been archived; the code is now being maintained at [langchain-examples](https://github.com/alphasecio/langchain-examples/search).*
+
 A sample Streamlit web application for search queries using [LangChain](https://langchain.readthedocs.io/en/latest) and [SerpApi](https://serpapi.com/).
 
 LangChain is an open-source framework created to aid the development of applications leveraging the power of large language models (LLMs). It can be used for chatbots, text summarisation, data generation, code understanding, question answering, evaluation, and more. SerpApi, on the other hand, is a tool for scraping search engine results pages (SERPs). It provides a simple and efficient way to gather data from popular search engines like Google, Bing, Yahoo, and more.
